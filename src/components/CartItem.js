@@ -1,7 +1,7 @@
 import React from 'react';
 import { Form } from 'react-bootstrap';
 import { useFormContext } from 'react-hook-form';
-import { amount } from './utils';
+import { amount } from '../utils';
 
 function CartItem({ fund }) {
 	return (
