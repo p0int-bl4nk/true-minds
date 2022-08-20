@@ -21,7 +21,7 @@ export default function Fund({ fund }) {
 		<div className='d-flex w-100 justify-content-between align-items-center'>
 			<div className=''>
 				<p className='text-uppercase fs-5 fw-bold'>{fund.name}</p>
-				<small className='text-secondary fw-bold position-relative'>
+				<small className='text-secondary fw-bold'>
 					<span className='text-capitalize'>{fund.category.toLocaleLowerCase()}</span> * {fund.classification} * {fund.riskmeter}
 				</small>
 			</div>

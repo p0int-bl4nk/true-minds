@@ -6,22 +6,22 @@ import { amount } from '../utils';
 function CartItem({ fund }) {
 	return (
 		<div className='w-100'>
-			<div className='px-4'>
-				<div className='form-row col-12 d-flex'>
-					<div className='col-6 text-uppercase fs-5 fw-bold'>
-						{fund.name}
+				<div className="d-flex w-100 justify-content-between align-items-start mb-2 px-3">
+					<div className='d-flex flex-column'>
+						<div className='text-uppercase fs-5 fw-bold'>
+							{fund.name}
+						</div>
+						<div className='d-flex'>
+							<small className='text-secondary fw-bold'>
+								<span className='text-capitalize'>{fund.category.toLocaleLowerCase()}</span> * {fund.classification}
+							</small>
+						</div>
 					</div>
-					<div className='col-6 fw-bold'>
-						Min. Amount: {amount(fund.minimumPurchaseAmount)}
+						<div className='fw-bold'>
+							Min. Amount: {amount(fund.minimumPurchaseAmount)}
+						</div>
 					</div>
-				</div>
-				<div className='form-row col-12 d-flex'>
-					<small className='text-secondary fw-bold'>
-						<span className='text-capitalize'>{fund.category.toLocaleLowerCase()}</span> * {fund.classification}
-					</small>
-				</div>
-			</div>
-			<div className='p-2'>
+			<div>
 				<Input
 					id={fund.id}
 					min={fund.minimumPurchaseAmount}
