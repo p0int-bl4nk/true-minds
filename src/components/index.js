@@ -3,7 +3,7 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 import Cart from './Cart';
 import FundList from './FundList';
 
-export default function () {
+export default function Body() {
 	return (
 		<Routes>
 			<Route path='/list' element={<FundList/>}/>

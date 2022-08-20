@@ -11,6 +11,7 @@ function App() {
   const [cart, setCart] = useState({});
   const addToCart = (fund) => { setCart({ ...cart, [fund.id]: fund }); };
   const removeFromCart = (fund) => { setCart({ ...cart, [fund.id]: undefined }); };
+  const clearCart = () => setCart({});
 
   const [toastMessage, setToastMessage] = useState(null);
   const showToast = (message) => { setToastMessage(message); };
@@ -20,12 +21,10 @@ function App() {
     cart,
     addToCart,
     removeFromCart,
+    clearCart,
     showToast,
     hideToast
   };
-
-
-  // console.log('cart >>>>>>>', cart);
 
   return (
     <div className="container">
