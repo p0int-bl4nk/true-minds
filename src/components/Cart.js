@@ -27,7 +27,7 @@ export default function Cart() {
 		<div className='w-75 mx-auto'>
 			<FormProvider {...methods}>
 				<form onSubmit={handleSubmit(submit)}>
-					<fieldset>
+					<fieldset disabled={methods.formState.isSubmitting}>
 						<ListGroup>
 							{
 								selectedFunds
