@@ -18,14 +18,14 @@ export default function Fund({ fund }) {
 	}
 
 	return (
-		<div className='d-flex col-12'>
-			<div className='col-6'>
+		<div className='d-flex w-100 justify-content-between align-items-center'>
+			<div className=''>
 				<p className='text-uppercase fs-5 fw-bold'>{fund.name}</p>
-				<small className='text-secondary fw-bold'>
-					<span className='text-capitalize'>{fund.category.toLocaleLowerCase()}</span> * {fund.classification}  * {fund.riskmeter}
+				<small className='text-secondary fw-bold position-relative'>
+					<span className='text-capitalize'>{fund.category.toLocaleLowerCase()}</span> * {fund.classification} * {fund.riskmeter}
 				</small>
 			</div>
-			<div className='col-6 m-auto'>
+			<div className=''>
 				{
 					isAlreadyInCart
 						? <button className={`btn border-danger`} onClick={handleClick}>
