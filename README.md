@@ -2,15 +2,19 @@
 
 Live site: [https://gentle-meringue-502029.netlify.app](https://gentle-meringue-502029.netlify.app)
 
-In the project directory, you can run:
+For local setup:
+
+In the project directory, run
+
+### `npm ci`
+
+Install dependencies
 
 ### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
 ### `npm run build`
 
