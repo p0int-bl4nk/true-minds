@@ -26,13 +26,14 @@ function CartItem({ fund }) {
 					id={fund.id}
 					min={fund.minimumPurchaseAmount}
 					max={fund.maximumPurchaseAmount}
+					multipleOf={Number(fund.purchaseAmountMultiplier)}
 				/>
 			</div>
 		</div>
 	);
 }
 
-const Input = ({ id, min, max }) => {
+const Input = ({ id, min, max, multipleOf }) => {
 	const { register, formState: { errors } } = useFormContext();
 
 	return (
@@ -55,6 +56,7 @@ const Input = ({ id, min, max }) => {
 							valueAsNumber: true,
 							validate: ( value ) => {
 								if (!( /^\d+$/.test(value) )) return 'Invalid amount';
+								if (value % multipleOf !== 0) return `Amount must be multiple of ${multipleOf}`;
 								return true;
 							}
 						}
