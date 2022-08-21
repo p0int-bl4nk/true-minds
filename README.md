@@ -1,6 +1,6 @@
 ## Available Scripts
 
-Live site: [https://6300788c82d48a09d0efa6c4--gentle-meringue-502029.netlify.app](https://6300788c82d48a09d0efa6c4--gentle-meringue-502029.netlify.app)
+Live site: [https://gentle-meringue-502029.netlify.app](https://gentle-meringue-502029.netlify.app)
 
 In the project directory, you can run:
 
